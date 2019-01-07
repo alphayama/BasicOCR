@@ -20,6 +20,7 @@ namespace ImgBinEg
 
         static void Main(string[] args)
         {
+            Console.Title = "Basic OCR.exe";
             string filename,path,dir,language;
             //take full path from user
             Console.WriteLine("Enter path:");
@@ -32,7 +33,7 @@ namespace ImgBinEg
             language=Console.ReadLine();
             //Create Bitmap object
             Bitmap img2 = Accord.Imaging.Image.FromFile(path);
-
+            
             //Image is first converted to Grayscale as Thresholding doesn't support coloured images as input
             Grayscale gray = new Grayscale(0.2125, 0.7154, 0.0721);
             Bitmap result = gray.Apply(img2);
