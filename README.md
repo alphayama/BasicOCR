@@ -14,4 +14,3 @@ The results are currently inaccurate for Oriya.
 
 
 
-_Note: I'll update this readme_
